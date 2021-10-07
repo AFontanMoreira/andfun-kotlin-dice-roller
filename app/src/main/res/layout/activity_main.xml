@@ -30,6 +30,8 @@
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/dice_00" />
 
+
+    //Con el app:icon se asocia el icono
     <Button
         android:id="@+id/roll_button"
         android:layout_width="wrap_content"
