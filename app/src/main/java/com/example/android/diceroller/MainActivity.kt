@@ -19,11 +19,8 @@ package com.example.android.diceroller
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.util.*
-import kotlin.random.Random as Random1
 
 
 class MainActivity : AppCompatActivity() {
@@ -49,12 +46,12 @@ class MainActivity : AppCompatActivity() {
 
         var randomInt = Random().nextInt(6)+1
         val drawableResource = when (randomInt) {
-            1 -> R.drawable.dice_1
-            2 -> R.drawable.dice_2
-            3 -> R.drawable.dice_3
-            4 -> R.drawable.dice_4
-            5 -> R.drawable.dice_5
-            else -> R.drawable.dice_6
+            1 -> R.drawable.dice_01
+            2 -> R.drawable.dice_02
+            3 -> R.drawable.dice_03
+            4 -> R.drawable.dice_04
+            5 -> R.drawable.dice_05
+            else -> R.drawable.dice_06
         }
 
         diceImage.setImageResource(drawableResource)
