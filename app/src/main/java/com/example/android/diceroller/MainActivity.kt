@@ -44,8 +44,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun rollDice() {
 
-        var randomInt = Random().nextInt(6)+1
-        val drawableResource = when (randomInt) {
+        val shuffled = (1..6).shuffled().last()
+        val drawableResource = when (shuffled) {
             1 -> R.drawable.dice_01
             2 -> R.drawable.dice_02
             3 -> R.drawable.dice_03
